@@ -9,7 +9,8 @@
         },
         "editor.suggest.insertMode": "replace",
         
-    }
+    },
+    "prettier.semi": false
     
 }
 
