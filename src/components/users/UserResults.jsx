@@ -1,12 +1,10 @@
-import {  useContext } from "react";
+import { useContext } from 'react'
 import Spinner from '../layout/Spinner'
 import UserItem from '../users/UserItem'
 import GithubContext from '../../context/github/GithubContext'
 
 function UserResults() {
-    const {users, loading} = useContext(GithubContext)
-
-
+  const { users, loading } = useContext(GithubContext)
 
   if (!loading) {
     return (
@@ -20,4 +18,5 @@ function UserResults() {
     return <Spinner />
   }
 }
+
 export default UserResults
